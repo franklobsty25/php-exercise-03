@@ -11,6 +11,8 @@ Route::get('/orders/{orderId}', function ($orderId) {
         return $orderDetails;
     }
 
+    get_order_with_details($orderId);
+
     /**
      *  Improvements that can be made to the code is by using eloquent relationships
      */
